@@ -14,7 +14,7 @@ class PersonalitySkill1(MycroftSkill):
         super(PersonalitySkill1, self).__init__(name="PersonalitySkill1")
 		
 	def initialize(self):
-        matt_ordave_intent = IntentBuilder("MattOrDaveIntent").\
+        matt_or_dave_intent = IntentBuilder("MattOrDaveIntent").\
             require("MattOrDaveKeyword").build()
         self.register_intent(matt_or_dave_intent,
                              self.handle_matt_or_dave_intent)
