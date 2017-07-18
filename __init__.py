@@ -19,11 +19,11 @@ class PersonalitySkill1(MycroftSkill):
             self.register_intent(matt_or_dave_intent, self.handle_matt_or_dave_intent)
 	
 	def handle_matt_or_dave_intent(self, message):
-        self.speak_dialog("matt.dave")
+            self.speak_dialog("matt.dave")
 	
 	
 	def stop(self):
-        pass
+            pass
 	
 def create_skill():
     return PersonalitySkill1()
